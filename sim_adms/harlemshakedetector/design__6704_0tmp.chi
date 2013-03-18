@@ -1,0 +1,211 @@
+1*******07-Mar-13 *******  SystemVision Version 5.9  (Version 5.9)  *******13:40:54******
+
+0*title
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  .OPTION eldo_debug
+    3  .OP
+    4  * Top Spice file: ..\..\genhdl\harlemshakedetector\harlemshakedetector.cir
+    5  .OP
+    6  .TRAN 0 8S 0
+    7  * .ac dec 100  
+    8  .PLOT TRAN SG(AVDD#DEFHOOK#0) SG(DEEP_VOICE_DETECTED) SG(DO_THE_HARLEM_SHAKE) V(AVDD) V(AVSS) V(DEEP_VOICE_FILTERED) V(MUSIC) V(SLICE_LEVEL) V(VCM)
+    9  * .plot ac V(avdd) V(avss) V(deep_voice_filtered) V(music) V(slice_level) V(vcm)
+   10  .OPTION eps=1.0e-7
+   11  .OPTION hmin=1.0e-12
+   12  .OPTION print_dc=1
+   13  * save tr toplevel
+   14  * save ac toplevel
+   15  * save ba
+   16  
+   17  .SAVE file=harlemshakedetector.iic end no_save_wdb
+   18  * .plot dc V(avdd) V(avss) V(deep_voice_filtered) V(music) V(slice_level) V(vcm)
+   19  ** including ..\..\genhdl\harlemshakedetector\harlemshakedetector.cir
+    1  
+    2  * Project HARLEMSHAKEDETECTOR
+    3  * Mentor Graphics Netlist Created with Version 5.8
+    4  * File created Thu Mar 07 13:39:24 2013
+    5  * Inifile   : 
+    6  *
+    7  * Config file: C:\MentorGraphics\SystemVision5.9\standard\svspice.cfg
+    8  *
+    9  * Options   : -_ -h -kC:\MentorGraphics\SystemVision5.9\standard\svspice.cfg -gharlemshakedetector.tempfile 
+   10  * 
+   11  * Levels    : 
+   12  * 
+   13  .OPTION noinclib
+   14  * Models for Eldo<->VHDL-AMS data conversion
+   15  .MODEL A2D_ELDO A2D MODE=STD_LOGIC VTH=1.65
+   16  .MODEL D2A_ELDO D2A MODE=STD_LOGIC VHI=3.3 VLO=0.0
+   17  .DEFHOOK a2d_eldo
+   18  .DEFHOOK d2a_eldo
+   19  .PARAM PROCESS_CORNER=0
+   20  YV3 V_CONSTANT(IDEAL) GENERIC: LEVEL="1.65" PORT: AVDD VCM
+   21  YAL1 VIA_DL_DFFR(LEVEL_2) GENERIC: DELAY="0.1800E-9" SIGNALTYPE="ANALOG" PORT: 
+   22  + AVDD DEEP_VOICE_DETECTED AVDD DO_THE_HARLEM_SHAKE
+   23  YN1I43 V_VS_TIME_FROM_FILE(IDEAL) PORT: MUSIC VCM
+   24  YV1 V_CONSTANT(IDEAL) GENERIC: LEVEL="0.0" PORT: AVSS 0
+   25  YFLTR2 VIA_FILTER_CONTINUOUS(LEVEL_0) GENERIC: 
+   26  + A="(8.76995679608E+59,7.62397855445E+56,1.18475482273E+55,9.10242494647E+51,6.82744365675E+49,4.56165284385E+46,2.1957548253E+44,1.25002687542E+41,4.33682265797E+38,2.04996861625E+35,5.46958267798E+32,2.07705246628E+29,4.45217444485E+26,1.3002297964E+23,2.31411461013E+20,4.87106028026E+16,7.3868563328E+13,9978353579.54,13159231.3467,857.993420542,1.0)" 
+   27  + AREA="3070200" 
+   28  + B="(8.76688554048E+56,0.0,2.49811726295E+52,0.0,2.40350009005E+47,0.0,1.11661512337E+42,0.0,2.79493536401E+36,0.0,3.84917080404E+30,0.0,2.869275685E+24,0.0,1.17680505179E+18,0.0,260043301032.0,0.0,27746.9248182,0.0,0.000999649798092)" 
+   29  + BW="150.0" FC="158.1" FILTERTYPE="BANDPASS" FSTOP="250" ISUPNOM="9500" 
+   30  + ORDER="10" SETTLETIME="(5.6E-06,1E-06,1E-05)" STOPATTEN="60" STYLE="ELLIP" 
+   31  + PORT: AVDD MUSIC DEEP_VOICE_FILTERED AVDD AVSS VCM
+   32  YCMP1 VIA_CMP_OA(LEVEL_0) GENERIC: GM="(12.7E-3,10.8E-3,14.86E-3)" VHYST="50" 
+   33  + PORT: AVDD AVSS DEEP_VOICE_DETECTED AVDD SLICE_LEVEL DEEP_VOICE_FILTERED
+   34  YV4 V_CONSTANT(IDEAL) GENERIC: LEVEL="1.7" PORT: SLICE_LEVEL 0
+   35  YV2 V_CONSTANT(IDEAL) GENERIC: LEVEL="1.65" PORT: VCM AVSS
+   36  * DICTIONARY 1
+   37  * GND = 0
+   38  *Note: Floating node DO_THE_HARLEM_SHAKE.
+   39  .GLOBAL ELECTRICAL_REF
+   40  .MODEL V_VS_TIME_FROM_FILE(IDEAL) MACRO LANG=VHDLAMS LIB=EDULIB
+   41  .MODEL V_CONSTANT(IDEAL) MACRO LANG=VHDLAMS LIB=EDULIB
+   42  .MODEL VIA_FILTER_CONTINUOUS(LEVEL_0) MACRO LANG=VHDLAMS LIB=WORK
+   43  .MODEL VIA_CMP_OA(LEVEL_0) MACRO LANG=VHDLAMS LIB=WORK
+   44  .MODEL VIA_DL_DFFR(LEVEL_2) MACRO LANG=VHDLAMS LIB=WORK
+   45  *END
+   19  
+   20  .END
+
+End of file 
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+
+***** GENERATION ...
+
+
+***** 0  error(s). 
+***** 0  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+
+Memory space allocated (bytes): 119003
+8 elements
+6 nodes 
+0 input signals
+1 functional instances
+
+	Pole         Real part       Imag. part          Modulus
+	  1         -128.42724       1132.77353       1140.03045
+	  2         -128.41903      -1132.77014       1140.02616
+	  3          -97.61050       -860.24457        865.76471
+	  4          -97.59338        860.20177        865.72025
+	  5          -84.76666       1382.66674       1385.26269
+	  6          -84.76141      -1382.68202       1385.27761
+	  7          -42.90367        711.28508        712.57785
+	  8          -42.86860       -710.81285        712.10436
+	  9          -36.38340      -1508.31731       1508.75606
+	 10          -36.34744       1508.45225       1508.89010
+	 11          -19.94297        653.99406        654.29806
+	 12          -19.41395       -656.24543        656.53254
+	 13          -13.19633       1555.46181       1555.51778
+	 14          -13.15653      -1555.81552       1555.87115
+	 15           -6.92015       -625.12283        625.16113
+	 16           -4.68171        624.48453        624.50208
+	 17           -2.85717      -1570.63107       1570.63367
+	 18           -2.84612       1570.86532       1570.86790
+	 19            1.70892        638.05304        638.05533 <==
+	 20            3.39393       -635.59639        635.60545 <==
+Warning 222: OBJECT "YFLTR2": Instability may occur because the real parts of some 
+ of the denominator's root are in the positive s plane
+ Poles are dumped in the chi file on disk
+
+ SystemVision Version 5.9 Mon May 14 19:27:45 GMT 2012
+
+
+*** DATE: 07-Mar-2013  13:40:55
+
+*** TITLE: *title
+
+TEMPERATURE : 27.000000 degrees C
+
+Searching Operating Point between -3.000000E+013V and 
+                                  3.000000E+013V
+
+
+
+1***************07-Mar-2013 ***********************  SystemVision Version 5.9  (Build Date Mon May 14 19:27:45 GMT 2012)  ***********************13:40:55*****************
+
+0*title
+0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+*** DC Control Options : 
+
+GMIN           = 1.00e-012 NMAXSIZE       = 60000    ITL1           = 100      
+GRAMP          = 0        NETSIZE        = 100      VMIN           = UNDEF    
+VMAX           = UNDEF    
+
+*** Accuracy Control Options : 
+
+ITOL           = 1.00e-006 EPS            = 1.00e-007 VNTOL          = 1.00e-007 
+RELTOL         = 5.00e-005 RELERR         = 5.00e-002 PIVREL         = 1.00e-003 
+PIVTOL         = 1.00e-013 ABSTOL         = 1.00e-013 FLXTOL         = 1.00e-011 
+MAXORD         = 2.00e+000 
+
+*** Time-step Control Options : 
+
+ZOOMTIME       = 1.00e+000 STEP           = 0.00e+000 STARTSMP       = 0.00e+000 
+FREQSMP        = 0.00e+000 COURESOL       = 0.00e+000 TRTOL          = 7.00e+000 
+HMIN           = 1.00e-012 ITL3           = 3        ITL4           = 13       
+FT             = 1.25e-001 DCLOG          = 1.00e+000 LVLTIM         = 2        
+LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-001 
+ABSVAR         = 2.00e-001 SAMPLE         = 0.00e+000 HMAX           = UNDEF    
+
+
+*** MosFet default Options : 
+
+SCALE          = 1.00e+000 SCALM          = 1.00e+000 SCALEBSIM      = 1.00e+000 
+DEFAD          = UNDEF    DEFAS          = UNDEF    DEFPD          = UNDEF    
+DEFPS          = UNDEF    DEFW           = 1.00e-004 DEFL           = 1.00e-004 
+DEFNRD         = UNDEF    DEFNRS         = UNDEF    XA             = 6.00e-006 
+LIMRMOS        = UNDEF    SHRINK         = 1.00e+000 
+
+*** General Information Options : 
+
+SDA            = 0        CPTIME         = UNDEF    STAT           = 0        
+TIMEDIV        = 0        SIMUDIV        = 0        SAVETIME       = 0        
+MAXTRAN        = 1000     MAXNODES       = 500      MAXV           = 1.00e+013 
+LIMPROBE       = 1000     FLICKER_NOISE  = 0        THERMAL_NOISE  = 0        
+TNOM           = 2.70e+001 TMAX           = UNDEF    
+SPICDC         = 0        SPIOUT         = 0        NEWTON         = 1        
+OSR            = 0        TRAP           = 1        GEAR           = 0        
+BE             = 0        PROBEOP        = 0        NOLAT          = 0        
+NWLAT          = 0        ANALOG         = 0        BBDEBUG        = 0        
+NOSIZECHK      = 0        QTRUNC         = 0        UNBOUND        = 0        
+LCAPOP         = 0        STVER          = 0        MOTOROLA       = 0        
+AMS            = 0        ASPEC          = 0        INPUT          = 0        
+NOINIT         = 0        PSF            = 0        WSF            = 0        
+WSFASCII       = 0        NOBIN          = 0        NOCOU          = 1        
+WL             = 0        NODE           = 0        LIST           = 0        
+SPI3BIN        = 0        SPI3ASC        = 0        NOMOD          = 0        
+WSF            = 0        WSFASCII       = 0        NOBIN          = 0        
+NOCOU          = 1        WL             = 0        NODE           = 0        
+LIST           = 0        SPI3BIN        = 0        SPI3ASC        = 0        
+NOMOD          = 0        RMOS           = 0        NWRMOS         = 1        
+NONWRMOS       = 0        USEDEFAP       = 0        NOASCII        = 0        
+NOAEX          = 0        AEX            = 0        AEX            = 0        
+ASCII          = 1        MIXED          = 0        SWITCH         = 0        
+USERSWITCH     = 0        TIMING         = 0        MODWL          = 1        
+ULOGIC         = 0        
+
+
+Warning  49: This circuit exhibits singularity due to YV1.AC_SPEC
+(See documentation for more detail on singularities)
+Singularity can sometimes be removed if setting
+option  PIVTOL to 

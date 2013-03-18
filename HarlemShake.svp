@@ -1,0 +1,25 @@
+LIST TESTBENCHES
+harlemshakedetector
+ENDLIST
+ACTIVE_TESTBENCH harlemshakedetector
+SECTION harlemshakedetector
+TYPE SCH
+NL_OPTION SPICE ENTINST USELIBS PAREXT
+SIM_SPICE 1
+DESIGN_ROOT genhdl\harlemshakedetector\harlemshakedetector.cir
+LIST VHDL
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\v_constant.vhd
+C:\PROGRA~2\VIADES~1\Via_Models\hdl\via_dl_lib.vhd
+%SV_ROOT%\win32\edulib\%admsver%\Electrical\v_vs_time_from_file.vhd
+C:\PROGRA~2\VIADES~1\Via_Models\hdl\via_flt_ct.vhd
+C:\PROGRA~2\VIADES~1\Via_Models\hdl\via_cmp_oa.vhd
+ENDLIST
+LIST SPICE
+genhdl\harlemshakedetector\harlemshakedetector.cir
+ENDLIST
+LIST EXPERIMENT
+expt1.cmd
+ENDLIST
+ENDSECTION
+LIST ADDITIONAL ADMS LIBRARIES
+ENDLIST
